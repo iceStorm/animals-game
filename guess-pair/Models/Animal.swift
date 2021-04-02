@@ -7,15 +7,16 @@
 //
 
 import Foundation
+import UIKit
 
 class Animal {
     var name: String
-    var imageName: String
-    var soundName: String
+    var imageURL: URL
+    var soundURL: URL?
     
-    init(name: String, imageName: String, soundName: String) {
+    init(name: String, imageURL: URL, soundURL: URL?) {
         self.name = name
-        self.imageName = imageName
-        self.soundName = soundName
+        self.imageURL = imageURL
+        self.soundURL = soundURL
     }
 }
